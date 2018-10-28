@@ -1,2 +1,3 @@
 # hello-world
-Ideas
+
+I suppose you have to start somewhere!
