@@ -1,0 +1,18 @@
+# Triangular numbers
+
+# Printing the first 10 numbers
+    
+triangleNumber=0
+for i in range(1,11):
+    triangleNumber = i + triangleNumber
+    print(triangleNumber)
+    
+# Creating a list using 'List Comprehensions'
+
+triangleNumberList = [i*(i+1)/2 for i in range(1,11)]
+
+# Creating nth triangular number
+
+def triFunc(n):
+    triangleOutput = n*(n+1)/2
+    print('The triangular number for the ', n, 'th value is ', triangleOutput, sep='')
