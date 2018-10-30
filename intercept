@@ -1,0 +1,16 @@
+# Calculates intersection based on inputs 
+
+lineOneGradient = int(input('insert gradient: '))
+lineOneIntercept = int(input('insert intercept: '))
+print('Line 1: y = ', lineOneGradient,'x + ',lineOneIntercept, sep='')
+
+lineTwoGradient = int(input('insert gradient: '))
+lineTwoIntercept = int(input('insert intercept: '))
+print('Line 2: y = ', lineTwoGradient,'x + ',lineTwoIntercept, sep='')
+
+if lineOneGradient==lineTwoGradient:
+    print('Error: Parallel lines do not intersect')
+else:
+    x = (lineTwoIntercept-lineOneIntercept)/(lineOneGradient-lineTwoGradient)
+    y = (lineOneGradient*x) + lineOneIntercept
+    print('Intersection is found at: ', x,',',y, sep='')
